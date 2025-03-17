@@ -59,13 +59,13 @@ const ExperienceComponent = ({ experiences, fetchExperiences, deleteExperience }
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         <input
-          type="date"
+          type="text"
           value={newItem.startDate}
           onChange={(e) => setNewItem({ ...newItem, startDate: e.target.value })}
           className="border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
         />
         <input
-          type="date"
+          type="text"
           value={newItem.endDate}
           onChange={(e) => setNewItem({ ...newItem, endDate: e.target.value })}
           className="border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"

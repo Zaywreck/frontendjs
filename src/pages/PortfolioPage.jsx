@@ -91,6 +91,8 @@ const Home = () => {
                 <h3 className="text-2xl font-semibold text-gray-800 mb-2">{edu.school}</h3>
                 <p className="text-gray-600 text-lg mb-2">{edu.degree}</p>
                 <p className="text-gray-500">{edu.description}</p>
+                <p className="text-gray-500">Başlangıç Tarihi: {edu.start_date}</p>
+                <p className="text-gray-500">Bitiş Tarihi: {edu.end_date}</p>
               </div>
             ))}
           </div>
@@ -106,8 +108,8 @@ const Home = () => {
                 <div key={exp.id} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
                   <h3 className="text-2xl font-semibold text-gray-800 mb-2">{exp.title} - {exp.company}</h3>
                   <p className="text-gray-600 mb-2">{exp.description}</p>
-                  <p className="text-gray-500">Başlangıç Tarihi: {new Date(exp.start_date).toLocaleDateString()}</p>
-                  <p className="text-gray-500">Bitiş Tarihi: {new Date(exp.end_date).toLocaleDateString()}</p>
+                  <p className="text-gray-500">Başlangıç Tarihi: {exp.start_date}</p>
+                  <p className="text-gray-500">Bitiş Tarihi: {exp.end_date}</p>
                 </div>
               ))
             )}
