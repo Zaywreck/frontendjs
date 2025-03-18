@@ -21,10 +21,6 @@ const Footer = () => {
             <Mail className="w-5 h-5" />
             <span>mgulle35@gmail.com</span>
           </a>
-          <a href="tel:+905522690531" className="flex items-center space-x-2 hover:text-gray-400 transition">
-            <Phone className="w-5 h-5" />
-            <span>+90 552 269 05 31</span>
-          </a>
         </div>
 
         <p className="mt-4 text-sm">&copy; 2025 Mert Gülle - Tüm Hakları Saklıdır.</p>
